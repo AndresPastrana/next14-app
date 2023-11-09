@@ -1,21 +1,13 @@
 import React, { Suspense } from "react";
-import Fonts from "../fonts";
-import {
-  fetchCustomers,
-  fetchFilteredInvoices,
-  fetchInvoicesPages,
-  fetchLatestInvoices,
-  fetchRevenue,
-} from "../lib/data";
-import CardWrapper, { Card } from "@/app/ui/dashboard/cards";
+import Fonts from "@/app/fonts";
+import CardWrapper from "@/app/ui/dashboard/cards";
 import RevenueChart from "@/app/ui/dashboard/revenue-chart";
 import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
-import { log } from "console";
 import {
   CardsSkeleton,
   LatestInvoicesSkeleton,
   RevenueChartSkeleton,
-} from "../ui/skeletons";
+} from "../../ui/skeletons";
 
 const Dashboard = async () => {
   return (
